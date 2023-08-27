@@ -1,13 +1,10 @@
-import { Button } from "./ui/button";
-import { CgMenu } from "react-icons/cg";
 import { UserButton } from "@clerk/nextjs";
+import MobileSidebar from "@/components/mobile-sidebar";
 
 const Navbar = () => {
   return (
     <div className="flex items-center p-4">
-      <Button variant="ghost" size="icon" className="md:hidden">
-        <CgMenu />
-      </Button>
+      <MobileSidebar />
       <div className="flex w-full justify-end">
         <UserButton afterSignOutUrl="/" />
       </div>
